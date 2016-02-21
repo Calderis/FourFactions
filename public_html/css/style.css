@@ -1,0 +1,1196 @@
+@import url('style-landing.css');
+
+
+/*----------------------------------------------------------------
+    General Rules
+----------------------------------------------------------------*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+ /* font-size: 16px; */;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 1);
+    color: #e5e5e5;
+    font-size: 1.125em; /* font-size: 18px; */
+    font-family: 'PT Sans Narrow', sans-serif;
+    line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #e5e5e5;
+    font-family: 'PT Sans Narrow', sans-serif;
+    line-height: 1.34;
+    text-rendering: auto; /* Android browser */
+}
+
+a {
+    color: #e5e5e5;
+    text-decoration: none;
+}
+input{
+   color: #e5e5e5; 
+}
+
+.csstransitions a {
+    -webkit-transition: background-color 0.1s linear, color 0.1s linear;
+    -moz-transition: background-color 0.1s linear, color 0.1s linear;
+    transition: background-color 0.1s linear, color 0.1s linear;    
+}
+
+input[type=""],
+input:not([type]),
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+textarea,
+textarea.plain {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 0.333em;
+    -moz-border-radius: 0.333em;
+    border-radius: 0.333em;
+    color: #333;
+}
+
+textarea:focus,
+input:focus {
+    outline: 0;
+}
+
+textarea:not([type="button"]):hover,
+input:not([type="button"]):hover {
+    border-color: #cad1d9 ;
+}
+
+textarea:not([type="button"]):focus,
+textarea:not([type="button"]):active,
+input:not([type="button"]):focus,
+input:not([type="button"]):active {
+    border-color: #88d3ff ;
+}
+
+img {
+    display: block;
+}
+
+.centertxt {
+    text-align: center;
+}
+
+#main {
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    background-color: #fbfbfb;
+}
+
+section {
+    overflow-x: hidden;
+}
+
+.last-special {
+    margin-right: 0% ;
+}
+
+/*----------------------------------------------------------------
+    Perfect Fourth (http://type-scale.com)
+----------------------------------------------------------------*/
+
+h1 {
+    font-size: 2.369em;
+}
+
+h2 {
+    font-size: 1.777em;
+}
+
+h3 {
+    font-size: 1.333em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: 0.75em;
+}
+
+h6 {
+    font-size: 0.563em;
+}
+
+.row-content.buffer,
+.row-content.buffer-top {
+    padding-top: 3.8%;
+ /* This overwrites a layers.css rule */;
+}
+
+
+.scrollToTop{
+	width:100px; 
+	height:40px;
+	padding:5px; 
+	text-align:center; 
+	background: whiteSmoke;
+	font-weight: normal;
+	color: #fbfbfb;
+	text-decoration: none;
+	position:fixed;
+	top:75px;
+	right:40px;
+	display:none;
+	background-color: #333333;
+	z-index:20;
+}
+.scrollToTop:hover{
+	text-decoration:none;
+}
+
+#main {
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    background-color: #fbfbfb;
+}
+
+/*----------------------------------------------------------------
+    CTA
+----------------------------------------------------------------*/
+
+.call-to-action .row-content.buffer {
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.call-to-action {
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.p1 .call-to-action {
+    background-color: #ff6e5b;
+    color: #fbfbfb;
+}
+
+
+.call-to-action p {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
+}
+
+.call-to-action .button {
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 0;
+}
+
+/*----------------------------------------------------------------
+    Text color
+----------------------------------------------------------------*/
+
+.text-color {
+    color: #e5e5e5;
+}
+
+.text-color h1,
+.text-color h2,
+.text-color h3,
+.text-color h4,
+.text-color h5,
+.text-color h6,
+.text-color i {
+    color: #e5e5e5;
+}
+
+.text-color .small-icon,
+.text-color .big-icon {
+    background-color: #e5e5e5;
+}   
+
+.text-color a {
+    color: #e5e5e5;
+}
+
+/*----------------------------------------------------------------
+    Row columns
+----------------------------------------------------------------*/
+
+
+.row-content.buffer,
+.row-content.buffer-top {
+    padding-top: 3.8%;
+    color:#000000;
+ /* This overwrites a layers.css rule */;
+}
+
+/*----------------------------------------------------------------
+    Menu style --> See style-landing.css
+----------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------
+    Factions div style
+----------------------------------------------------------------*/
+
+
+section:nth-child(2){
+	position: relative;
+}
+
+#factions{
+	padding: 0;
+	height: 640px;
+	margin-left: -2%;
+	width: 104%;
+	overflow: hidden;
+}
+
+.faction{
+	width: 25%;
+	height: 100%;
+	vertical-align: top;
+	text-align: center;
+	padding: 30px;
+	border: 0;
+	float: left;
+	position: relative;
+	font-size:1em;
+	cursor: pointer;
+	margin: 0;
+
+	transition:width 0.5s ease;
+	transition-delay:width 0.5s ease;
+}
+
+.visible{
+	visibility: visible;
+	opacity: 1;
+	transition:visibility 0.5s ease 0.5s;
+}
+
+.hidden{
+	visibility: hidden;
+	opacity: 0;
+}
+
+.faction .text{
+	margin-top: 20%;
+	transition:opacity 0.5s ease 0.5s;
+}
+.faction .text h2{
+	margin-bottom:30px; 
+}
+.faction .text p{
+	background-color:rgba(0, 0, 0, 0.5);
+	max-width: 60%;
+	padding: 10px;
+	margin:auto;
+}
+.faction .text a{
+	margin-top: 30px;
+}
+
+.republic{
+	background: 
+	-webkit-linear-gradient(
+		rgba(190, 83, 68, 0.3),
+		rgba(190, 83, 68, 0.3)
+	),
+	url('../img/republic2.jpg');
+	background: 
+	-moz-linear-gradient(
+		rgba(190, 83, 68, 0.3),
+		rgba(190, 83, 68, 0.3)
+	),
+	url('../img/republic2.jpg');
+	background: 
+	-o-linear-gradient(
+		rgba(190, 83, 68, 0.3),
+		rgba(190, 83, 68, 0.3)
+	),
+	url('../img/republic2.jpg');
+	background:
+	linear-gradient(
+		rgba(190, 83, 68, 0.3),
+		rgba(190, 83, 68, 0.3)
+	),
+	url('../img/republic2.jpg');
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	/*background-position: center;*/
+}
+.rebels{
+	background: 
+	-webkit-linear-gradient(
+		rgba(189, 195, 199, 0.3),
+		rgba(189, 195, 199, 0.3)
+	),
+	url('../img/rebels2.jpg');
+	background: 
+	-moz-linear-gradient(
+		rgba(189, 195, 199, 0.3),
+		rgba(189, 195, 199, 0.3)
+	),
+	url('../img/rebels2.jpg');
+	background: 
+	-o-linear-gradient(
+		rgba(189, 195, 199, 0.3),
+		rgba(189, 195, 199, 0.3)
+	),
+	url('../img/rebels2.jpg');
+	background:
+	linear-gradient(
+		rgba(189, 195, 199, 0.3),
+		rgba(189, 195, 199, 0.3)
+	),
+	url('../img/rebels2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.trade{
+	background: 
+	-webkit-linear-gradient(
+		rgba(46, 204, 113, 0.3),
+		rgba(46, 204, 113, 0.3)
+	),
+	url('../img/trade2.jpg');
+	background: 
+	-moz-linear-gradient(
+		rgba(46, 204, 113, 0.3),
+		rgba(46, 204, 113, 0.3)
+	),
+	url('../img/trade2.jpg');
+	background: 
+	-o-linear-gradient(
+		rgba(46, 204, 113, 0.3),
+		rgba(46, 204, 113, 0.3)
+	),
+	url('../img/trade2.jpg');
+	background:
+	linear-gradient(
+		rgba46, 204, 113,8, 0.3),
+		rgba(46, 204, 113, 0.3)
+	),
+	url('../img/trade2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.empire{
+	background: 
+	-webkit-linear-gradient(
+		rgba(66, 102, 213, 0.3),
+		rgba(66, 102, 213, 0.3)
+	),
+	url('../img/empire2.jpg');
+	background: 
+	-moz-linear-gradient(
+		rgba(66, 102, 213, 0.3),
+		rgba(66, 102, 213, 0.3)
+	),
+	url('../img/empire2.jpg');
+	background: 
+	-o-linear-gradient(
+		rgba(66, 102, 213, 0.3),
+		rgba(66, 102, 213, 0.3)
+	),
+	url('../img/empire2.jpg');
+	background:
+	linear-gradient(
+		rgba(66, 102, 213, 0.3),
+		rgba(66, 102, 213, 0.3)
+	),
+	url('../img/empire2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.text{
+	top: 50%;
+	width: 100%;
+	z-index: 10;
+}
+
+/* Hover factions */
+
+/*.faction:hover{
+	width:55%;
+}*/
+
+.maximize{
+	width:55%;
+	z-index:10;
+}
+
+
+
+.maximize:nth-child(1){
+	background: 
+	-webkit-linear-gradient(
+		rgba(66, 102, 213, 0),
+		rgba(66, 102, 213, 0)
+	),
+	url('../img/republic2.jpg');
+	background: 
+	-moz-linear-gradient(
+		rgba(66, 102, 213, 0),
+		rgba(66, 102, 213, 0)
+	),
+	url('../img/republic2.jpg');
+	background: 
+	-o-linear-gradient(
+		rgba(66, 102, 213, 0),
+		rgba(66, 102, 213, 0)
+	),
+	url('../img/republic2.jpg');
+	background:
+	linear-gradient(
+		rgba(66, 102, 213, 0),
+		rgba(66, 102, 213, 0)
+	),
+	url('../img/republic2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.maximize:nth-child(2){
+	background: 
+	-webkit-linear-gradient(
+		rgba(66, 102, 213, 0),
+		rgba(66, 102, 213, 0)
+	),
+	url('../img/rebels2.jpg');
+	background: 
+	-moz-linear-gradient(
+		rgba(66, 102, 213, 0),
+		rgba(66, 102, 213, 0)
+	),
+	url('../img/rebels2.jpg');
+	background: 
+	-o-linear-gradient(
+		rgba(66, 102, 213, 0),
+		rgba(66, 102, 213, 0)
+	),
+	url('../img/rebels2.jpg');
+	background:
+	linear-gradient(
+		rgba(66, 102, 213, 0),
+		rgba(66, 102, 213, 0)
+	),
+	url('../img/rebels2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.maximize:nth-child(3){
+	background: 
+	-webkit-linear-gradient(
+		rgba(66, 102, 213, 0),
+		rgba(66, 102, 213, 0)
+	),
+	url('../img/trade2.jpg');
+	background: 
+	-moz-linear-gradient(
+		rgba(66, 102, 213, 0),
+		rgba(66, 102, 213, 0)
+	),
+	url('../img/trade2.jpg');
+	background: 
+	-o-linear-gradient(
+		rgba(66, 102, 213, 0),
+		rgba(66, 102, 213, 0)
+	),
+	url('../img/trade2.jpg');
+	background:
+	linear-gradient(
+		rgba(66, 102, 213, 0),
+		rgba(66, 102, 213, 0)
+	),
+	url('../img/trade2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.maximize:nth-child(4){
+	background: 
+	-webkit-linear-gradient(
+		rgba(66, 102, 213, 0),
+		rgba(66, 102, 213, 0)
+	),
+	url('../img/empire2.jpg');
+	background: 
+	-moz-linear-gradient(
+		rgba(66, 102, 213, 0),
+		rgba(66, 102, 213, 0)
+	),
+	url('../img/empire2.jpg');
+	background: 
+	-o-linear-gradient(
+		rgba(66, 102, 213, 0),
+		rgba(66, 102, 213, 0)
+	),
+	url('../img/empire2.jpg');
+	background:
+	linear-gradient(
+		rgba(66, 102, 213, 0),
+		rgba(66, 102, 213, 0)
+	),
+	url('../img/empire2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.minimize{
+	width: 15%;
+	font-size:80%;
+}
+
+/*----------------------------------------------------------------
+    Light play section
+----------------------------------------------------------------*/
+
+.light-play{
+	position: absolute;
+	width:90%;
+	height: 80%;
+	left:0;
+    right:0;
+    top:12%;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 10px 20px;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index:15;
+	box-sizing:border-box;
+	display: none;
+}
+.light-play h2{
+	font-size: 1em;
+}
+.light-play p{
+	font-size: 0.7em;
+	margin-bottom: 30px;
+}
+.light-play a{
+	font-size: 0.8em;
+}
+.close{
+	position: absolute;
+	right:5px;
+	top:-10px;
+	width: 20px;
+	height: 20px;
+	z-index: 11;
+}
+.close:hover{
+	cursor: pointer;
+}
+.logo-play{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+.logo-play img{
+	height: 25%;
+	width: 33%;
+	margin: auto;
+}
+
+.choice{
+	width:33%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0px 10px;
+	text-align: center;
+}
+.choice:nth-child(2){
+	border-right:1px solid; 
+	border-left:1px solid;
+}
+.choice h2{
+	margin-bottom: 20px;
+}
+.choice a{
+	display: block;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+.choice input[type="text"]{
+	width:80%;
+	height: 40px;
+	margin: auto;
+	margin-bottom: 30px;
+	padding: 5px;
+	background:none;
+}
+.choice input[type="submit"]{
+	border:none;
+	color:#ffffff;
+	height: 40px;
+	font-size: 0.8em;
+}
+
+.button{
+	width:80%;
+	margin: auto;
+	padding: 5px;
+	text-align: center;
+	border:none;
+	font-size: 1em;
+}
+.orange{
+	background-color: #ff6e5b;
+}
+.grey{
+	background-color: #333333 ;
+}
+.black{
+	background-color: #1a1a1a;
+}
+
+/*----------------------------------------------------------------
+    Test 
+----------------------------------------------------------------*/
+
+.test{
+	padding: 0px 10px;
+	background: 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background:#1a1a1a url('../img/bg-test.png') no-repeat right;
+	color: #e5e5e5;
+
+	text-align: center;
+}
+#questions{
+	box-sizing:border-box;
+	background-color: #212121;
+	width:70%;
+	margin: auto;
+	padding: 40px 15%;
+}
+#questions .imgs h2{
+	color: #ff6e5b;
+	margin-bottom: 20px;
+}
+#questions .imgs{
+	margin-bottom: 80px;
+	margin-left: 10px;
+}
+#questions .imgs img{
+	width:auto;
+	height: auto;
+	margin:0 10px 0 0;
+	display: inline-block;
+}
+#question .imgs img:nth-child(1){
+	
+}
+#question p:nth-child(1){
+	width:50%;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+#questions .last{
+	width:40%;
+	display: none;
+}
+
+#questions .button:nth-child(1):hover{
+	cursor:pointer;
+}
+.form-test{
+	margin: 60px 0px;
+}
+
+.question-group{
+	position: relative;
+	margin-bottom: 20px;
+}
+.form-test .question{
+	margin-bottom: 30px;
+}
+.question-group input{
+	margin: 0;
+	float: left;
+	display: inline-block;
+}
+.question-group span{
+	vertical-align: top;
+}
+
+}
+.next-question{
+	margin-top: 30px;
+	border:none;
+}
+
+#questions .profile{
+	display: none;
+	/*margin-left: -1%;
+	width: 102%;*/
+	overflow: hidden;
+	background-color: #333333;
+}
+#questions .profile img:nth-child(1){
+	float:left;
+	width: 49%;
+	vertical-align: top;
+	padding-left:10px;
+	margin-right: 10px;
+	box-sizing:border-box;
+}
+#questions .your-profile{
+	width: 49%;
+	float: left;
+	padding:10px;
+	box-sizing:border-box;
+	margin-bottom: 50px;
+	text-align: justify;
+	
+}
+#questions .choice-faction{
+	clear:both;
+}
+#questions .choice-faction a{
+	width: 49%;
+	display: inline-block;
+	float: left;
+}
+#questions .choice-faction a:nth-child(1){
+	display: block;
+	margin-right: 12px;
+	margin-left: 0;
+
+}
+#questions .profile .orange{
+	width:100%;
+	clear:both;
+	display: block;
+}
+
+
+/*----------------------------------------------------------------
+    Game page
+----------------------------------------------------------------*/
+
+.game-page .row-content.buffer{
+	color: #ffffff;
+}
+.game-page section h2,span{
+	color:#ff6e5b;
+}
+
+.game-page .faction-name{
+	background: url("../img/logo-landing-jeu.png") no-repeat center;
+    background-size: auto 100%;
+    height: 400px;
+    margin-top:80px;
+    overflow: hidden;
+}
+/*.game-page .details  h2{
+	text-align: center;
+}*/
+
+.key-codes{
+	width: 80%;
+	margin: auto;
+	margin-bottom: 50px;
+}
+.ships{
+	width: 80%;
+	height:120px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+.ships img{
+	float: left;
+	display: inline-block;
+	width: 25%;
+	height: auto;
+}
+.your-ship{
+	margin:auto;
+	margin-bottom: 20px;
+}
+
+.game-page .rules{
+	background: url("../img/screen-game.png") no-repeat;
+    background-size: cover;
+    height: auto;
+    margin-top:40px;
+}
+.game-page .rules p{
+	text-align: center;
+}
+.game-page .rules .details{
+	background-color: #212121;
+}
+
+.game-page .caracteristics p{
+	width:80%;
+	margin: auto;
+}
+
+.factions-list{
+	width: 90%;
+	margin: auto;
+}
+.factions-list li p{
+	float: left;
+	margin-right: 40px;
+}
+.factions-list li img{
+	width: 10%;
+	vertical-align: top;
+}
+
+
+/*----------------------------------------------------------------
+    Retrospective template page
+----------------------------------------------------------------*/
+
+.fullWidth{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+div#page-container{
+    width:400%;
+    height: 100%;
+    margin-top: 5%;
+}
+div.page{
+    float: left;
+    width: 25%;
+    height: 100%;
+    color: #fff;
+    background-color: black;
+}
+
+div.page section.caracteristics{
+	padding: 50px 0;
+}
+div.page .call-to-action{
+	padding: 0px 0;
+}
+
+div#main div.page{
+    float: left;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: black;
+}
+
+div.page section h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 15px 0 15px 20%;
+}
+
+div.page section h2 span{
+    font-weight: bold;
+}
+
+div.page section a{
+    color: #fff;
+    text-decoration: none;
+}
+
+div.page section a.next{
+    float: right; 
+}
+
+div.page section a.prev{
+    float: left; 
+}
+
+div.page section div.details{
+    width:70%;
+    margin: auto;
+    font-weight: 300;
+    padding-top: 2%;
+}
+
+div.page section div.details p{
+    padding-bottom: 5%;
+}
+
+div.page section progress {
+    border:1px solid #fff;
+    background-color: #2f2f2f;
+}
+
+div.page section progress::-webkit-progress-bar { 
+    border:1px solid #fff;
+    background-color: #2f2f2f;
+}
+div.page section progress::-webkit-progress-value {  
+    background-color: #fff;
+}  
+div.page section progress::-moz-progress-bar { 
+    background-color: #fff;
+}
+
+div.page section.faction-name p{
+    padding-top: 15%;
+}
+
+div.page section.call-to-action{
+    background-color: #ff6f55;
+}
+
+div.page section.historic{
+    background-color: #2f2f2f;
+    padding: 2% 0;
+}
+
+div.page section.characters{
+    background: #000 url('../img/vador_retro_370x700-01.jpg') no-repeat;
+    background-size: contain;
+    padding: 2% 0;
+}
+
+div.page section.characters table{
+    width: 100%;
+}
+
+div.page section.characters table tr td{
+    width: 33%;
+    padding: 5px 10px;
+    text-align: justify;
+    line-height: 1.5;
+}
+div.page table tr td img{
+	width: 100%;
+}
+
+div.page section.caracteristics{
+    background-color: #2f2f2f;
+}
+
+div.page section.caracteristics div.text{
+    width: 100%;
+    text-align: justify;
+}
+div.page section.caracteristics div.performances div.performance{
+    float: left;
+    margin: 0 10px;
+}
+
+div.page section.acting{
+    background: #e5e5e5 url("../img/storm_retro_550x700-01.png")no-repeat;
+    background-size: contain;
+    color: #000;
+}
+
+div.page section.acting table{
+    width: 100%;
+}
+
+div.page section.acting table tr td{
+    width: 33%;
+    padding: 5px 10px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+div.page section.acting h2{
+    color: #000;
+}
+
+
+
+div.p1 section.faction-name{
+    background: url("../img/empire_profil_470x120-01.jpg") no-repeat center;
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+}
+
+div.p2 section.faction-name{
+    background-image: url("../img/retro_republique_1700x800.jpg");
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+}
+
+div.p3 section.faction-name{
+    background-image: url("../img/retro_federation_1700x800.jpg");
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+}
+
+div.p4 section.faction-name{
+    background-image: url("../img/retro_rebellion_1700x800.jpg");
+    background-size: cover;
+    height: 400px;
+    text-align: center;
+}
+
+
+div.page section.gallery .dg-container{
+    width: 100%;
+    height: 450px;
+    position: relative;
+    margin-bottom: 75px;
+}
+.dg-wrapper{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    -o-perspective: 1000px;
+    -ms-perspective: 1000px;
+    perspective: 1000px;
+}
+.dg-wrapper a{
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+    background-color: #131313;
+}
+.dg-wrapper a.dg-transition{
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.dg-wrapper a .video{
+	padding-bottom: 56.25%
+}
+.dg-wrapper a img{
+    display: block;
+    margin: 15px auto;
+    box-sizing: border-box;
+    width: 75%;
+}
+.dg-wrapper a div{
+    background-color: #131313;
+    border-top: 5px solid #ff6e59;
+    font-size: 15px;
+    padding: 15px;
+}
+.dg-wrapper a.dg-center div{
+    display: block;
+}
+.dg-container nav{
+    width: 300px;
+    position: absolute;
+    z-index: 1000;
+    bottom: 0px;
+    margin-top: 50px;
+    left: 35%;
+}
+.dg-container nav span{
+    float: left;
+    cursor:pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+    margin-left: 100px;
+}
+.dg-container nav span:hover{
+    opacity: 1;
+}
+.dg-container nav span.dg-next{
+    background:url("../img/arrow_right.png") no-repeat;
+    background-size: 50%;
+}
+
+.dg-container nav span.dg-prev{
+    background:url("../img/arrow_left.png") no-repeat;
+    background-size: 50%;
+}
+
+
+/*----------------------------------------------------------------
+    Footer
+----------------------------------------------------------------*/
+
+footer{
+	height: auto;
+	padding: 20px 40px;
+	background-color: #000;
+}
+.footer-content{
+	margin:auto;
+	width:70%;
+	text-align: center;
+}
+.footer-content .social-icons{
+	margin-top: 20px;
+}
+footer p,.social-icons i{
+	color: #cbcbcb;
+}
+footer .social-icons i{
+	margin: 0 5%;
+}
+
+
+@media screen and (max-width:768px){
+	.landing-page .main-logo{
+		width: 60%;
+		height: auto;
+		top:35%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

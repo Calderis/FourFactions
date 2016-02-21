@@ -1,0 +1,30 @@
+01 ***** librairies *****
+librairies
+***** Server directory *****
+express
+***** Game config *****
+
+02 ***** constructors *****
+myServer
+Client(pseudo,team,email)
+codeFFC
+spaceElements
+***** Asteroids & motherships &  *****
+03 CREATION OF GAMES ELEMENTS
+04 WHEN SOMEONE IS CONNECTING TO THE SERVER
+***** io.socket *****
+05 local data
+06 CONNECTION TROUGH GUEST
+07 REGISTRATION
+08 CONNECTION TROUGH FFC
+09 on newSpaceElement
+on newExplosion
+on explosionDone
+on destroyBefore
+10 on kill
+11 on disconnect
+12 on newMsg
+13 on newPos
+
+***** port *****
+

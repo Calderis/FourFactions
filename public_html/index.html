@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Star Wars - The Four Factions</title>
+        <meta name="description" content="Description du site">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/jeu.css">
+	<link rel="stylesheet" href="css/style.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
+    </head>
+ 
+    <body>
+       <header role="banner" class="light" id="Menu">
+		<div class="row">
+			<div id="brand">
+				<a href="index.html">
+					<img src="img/logo-lettre.png" alt="logo">
+				</a>
+			</div>
+			<a id="menu-toggle" href="#"><i class="fa fa-bars fa-lg"></i></a>
+			<nav role="navigation">
+				<ul>
+					<li class="menu-item">
+						<a href="index.html#home-page">Accueil</a>
+					</li>
+					<li class="menu-item">
+						<a href="index.html#factions">Factions</a>
+					</li>
+					<li class="menu-item">
+						<a href="index.html#questions">Passer le test</a>
+					</li>
+					<li class="menu-item">
+						<a href="lejeu.html">Le jeu</a>
+					</li>
+					<li class="menu-item play"><a href="#" class="button orange">Jouer !</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+       <section id="Game">
+            <section id="Connection">
+                <section id="teamSelect">
+                    <ul>
+                       <li id="boutonEmpire"><input type="button" onClick="selectTeam(1)"></li>
+                       <li id="boutonRepublic"><input type="button" onClick="selectTeam(2)"></li>
+                       <li id="boutonDroid"><input type="button" onClick="selectTeam(3)"></li>
+                       <li id="boutonRebels"><input type="button" onClick="selectTeam(4)"></li>
+                   </ul>
+                   
+                </section>
+                <section id="login">
+                   
+                    <ul id="loginUl">
+                       <input type="button" name="boutonClose" id="boutonClose" onClick="hide(login)">
+                        <li>
+                            <h2>Entrez votre 4F Code</h2>
+                            
+                            <form onsubmit="return false">
+                                <input type="text" id="ffc" name="ffc" placeholder="|">
+                                <input type="button" value="OK" onClick="connection(this.form)">
+                            </form>
+                        </li>
+                        <li>
+                           <h2>Choisissez un ID pour vos futures batailles</h2>
+                            <form onsubmit="return false">
+                                <input type="text" id="pseudo" name="pseudo" placeholder="|">
+                                <input type="button" value="OK" onClick="Register(this.form)">
+                            </form>
+                        </li>
+                        <span id="error01"></span>
+                    </ul>
+                </section>
+            </section>
+            <section class="BoutonLogin">
+                <input type="button" id="boutonPseudo" value="Souhaitez-vous un pseudo ?" onClick="wantPseudo()"><br>
+                <input type="button" id="boutonPseudoB" value="Possédez-vous déjà un 4FCode ?" onClick="wantPseudo()">
+            </section>
+            <section id="battle">
+                <section id="matchPoint">
+                    <ul>
+                        <li id="logoEmpire"></li>
+                        <li id="scoreEmpire"></li>
+                        
+                        <li id="logoRepublic"></li>
+                        <li id="scoreRepublic"></li>
+                        
+                        <li id="logoDroid"></li>
+                        <li id="scoreDroid"></li>
+                        
+                        <li id="logoRebel"></li>
+                        <li id="scoreRebel"></li>
+                    </ul>
+                    <p id="FFCODE"></p>
+                </section>
+                <section id="killList"></section>
+                <section id="chat">
+                    <section>
+                      <input type="button" name ="mute" id="mute" onClick="mute()">
+                      <!--<input type="range" name ="volume" id="volume" onchange="volume(this.value);">-->
+                    </section>
+                  <br>
+                   <input type="text" name="message" id="message" placeholder="Message..."  autocomplete="off" onkeypress="validateMsg(event)"/>
+                   <section id="zoneChat"></section>
+                </section>
+                <canvas id="canvas"></canvas>
+            </section>
+       </section>
+       <audio id="sound" autoplay loop>
+            <source src="media/New.MP3">
+            <source src="media/RemixStarsWars.OGG">
+        </audio>
+       <script src="/socket.io/socket.io.js"></script>
+       <script src="js/socket.js"></script>
+    </body>
+</html>

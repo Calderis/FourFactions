@@ -1,0 +1,297 @@
+/* ALL */
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus{
+	outline: none;
+}
+
+/* MENU */
+#Menu{
+    position:absolute;
+    top:-50px;
+    left:0px;
+    z-index:10;
+    -webkit-animation: close 1s cubic-bezier(0, 0, .78, .36) 1;
+       -moz-animation: close 1s cubic-bezier(0, 0, .78, .36) 1;
+            animation: close 1s cubic-bezier(0, 0, .78, .36) 1;
+}
+#Menu:hover{
+    -webkit-animation: open 1s ease 1;
+       -moz-animation: open 1s ease 1;
+            animation: open 1s ease 1;
+    top:0px;
+}
+
+/* ANIMATIONS */
+@-webkit-keyframes close {
+    0% {top:0px}
+    80% {top:0px}
+    100% {top:-50px}
+}
+@keyframes close {
+    0% {top:0px}
+    80% {top:0px}
+    100% {top:-50px}
+}
+
+@-webkit-keyframes open {
+    0% {top:-50px}
+    100% {top:0px}
+}
+@keyframes open {
+    0% {top:-50px}
+    100% {top:0px}
+}
+
+/* CONNECTION */
+#Connection{
+    height:100%;
+    width:100%;
+}
+
+/* TEAM's SELECTION */
+#teamSelect{
+    position:absolute;
+    z-index:9;
+    height:100%;
+    width:100%;
+    text-align: center;
+}
+#teamSelect ul{
+    height:100%;
+    width:100%;
+}
+#teamSelect ul li{
+    display: inline-block;
+    width:24%;
+    margin:0;
+    padding:0;
+    height:100%;
+    margin: auto;
+}
+#teamSelect ul li input{
+    margin-top:10px;
+    height:98%;
+    width:100%;
+    background-color:black;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#boutonEmpire input{
+    margin-left:6px;
+    border:2px solid #f00000;
+    background-image: url(../images/selectEmpire.png);
+}
+#boutonEmpire input:hover{
+    background-image: url(../images/selectEmpireH.png);
+}
+#boutonRepublic input{
+    margin-left:3px;
+    border:2px solid #6200fe;
+    background-image: url(../images/selectRepublic.png);
+}
+#boutonRepublic input:hover{
+    background-image: url(../images/selectRepublicH.png);
+}
+#boutonDroid input{
+    border:2px solid orange;
+    background-image: url(../images/selectDroid.png);
+}
+#boutonDroid input:hover{
+    background-image: url(../images/selectDroidH.png);
+}
+#boutonRebels input{
+    border:2px solid #00fe00;
+    margin-left:-6px;
+    background-image: url(../images/selectRebel.png);
+}
+#boutonRebels input:hover{
+    background-image: url(../images/selectRebelH.png);
+}
+
+
+/* LOGIN */
+#login{
+    position:absolute;
+    z-index:10;
+    text-align:center;
+    width:100%;
+    top:100px;
+}
+#login ul{
+    padding:100px;
+    background-color:rgba(21, 21, 21, 0.9);
+    background-image: url(../images/logo-footer.png);
+    background-position:bottom left;
+    background-repeat: no-repeat;
+    background-size:20%;
+    color:white;
+    width:50%;
+    margin:auto;
+}
+#login ul li{
+    padding:20px 0px 20px 0px;;
+}
+#login ul li h2{
+    padding:0px 0px 15px 0px;
+}
+#login input{
+    border : 1px solid #4d4d4d;
+    padding : 5px;
+    background: none;
+    color: white;
+}
+#pseudo, #ffc{
+    width:250px;
+    text-align:right;
+}
+#error01{
+    color:red;
+    font-size:0.6em;
+}
+.BoutonLogin{
+    position: absolute !important;
+    top:40px;
+    z-index:8;
+    left:150px;
+}
+.BoutonLogin input{
+    margin-bottom:20px;
+    background:none;
+    color:white;
+    padding : 10px 30px 10px 30px;
+}
+input#boutonClose {
+    background:none;
+    border:none;
+    float:right;
+    background-image: url(../images/Croix.png);
+    height:20px;
+    width:20px;
+    background-size:contain;
+}
+
+
+/* INTERFACE */
+#Game{
+    background-color:black;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index :0;
+}
+#mute{
+    height:20px;
+    width:20px;
+    background: none;
+    background-image: url(../images/sound.png);
+    border:none;
+    display:block;
+}
+
+/* BATTLE SCREEN */
+/* factions's scores */
+#matchPoint{
+    position:absolute;
+    z-index:5;
+    top:10px;
+    width:100%;
+    font-weight: lighter;
+    text-align:center;
+}
+#matchPoint li{
+    padding:15px;
+    background-size:200%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+#matchPoint ul{
+    margin-bottom:20px;
+    font-size:2em;
+    font-weight: 700;
+}
+#logoEmpire{background-image: url("../images/Galactic_empire_glow.png")}
+#logoRepublic{background-image: url("../images/Republique_glow.png")}
+#logoDroid{background-image: url("../images/Commerce_glow.png")}
+#logoRebel{background-image: url("../images/Rebel_glow.png")}
+
+#scoreEmpire{color:#fc0000;text-shadow: 0px 0px 6px #fc0000;}
+#scoreRepublic{color:#6200fe;text-shadow: 0px 0px 6px #6200fe;}
+#scoreDroid{color:orange;text-shadow: 0px 0px 6px orange;}
+#scoreRebel{color:#00fe00;text-shadow: 0px 0px 6px #00fe00;}
+
+#FFCODE{color:white;}
+#FFCODE span{font-size:1em;}
+
+/* kill list */
+#killList{
+    position:absolute;
+    z-index:7;
+    top:5px;
+    right:5px;
+    width:300px;
+    height: 70px;
+    overflow: hidden;
+    color:white;
+    text-align: right;
+    font-size:0.7em;
+}
+.kill{
+    height:20px;
+    width:20px;
+    display:inline-block;
+    background-image : url(../images/Logo_kill.png);
+    background-size : 170%;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+/* chat */
+#chat{
+    color:white;
+    position:absolute;
+    z-index:4;
+    bottom:5px;
+    width:400px;
+    left:20px;
+    height:250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-image: url(../images/logo-footer.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size:30%;
+}
+#message{
+    background:none;
+    border-bottom : 1px solid white;
+    border-left : 1px solid white;
+    border-top :none;
+    border-right :none;
+    padding:5px;
+    color : white;
+    margin-bottom:10px;
+}
+
+/* COLOR TEAM */
+.team0{color:white;font-weight:normal;}
+.team1{color:#fc0000;font-weight:bold;}
+.team2{color:#6200fe;font-weight:bold;}
+.team3{color:orange;font-weight:bold;}
+.team4{color:#00fe00;font-weight:bold;}
+
+.bEmpire{border:1px solid #fc0000}
+.bRepublic{border:1px solid #6200fe}
+.bDroid{border:1px solid orange}
+.bRebels{border:1px solid #00fe00}
+
+/* GAME */
+#canvas{
+    position:absolute;
+    z-index:1;
+    top:0;
+    left:0;
+}

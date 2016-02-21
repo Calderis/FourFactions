@@ -1,0 +1,42 @@
+----- Version 0.0 -----
+    0.0.1 Pouvoir Lancer le jeu lorsqu'on appuie sur l'onglet "Jouer" (OK)
+    0.0.2 Pouvoir choisir son camp (OK)
+    0.0.3 Pouvoir Entrer son pseudo et son email (OK)
+    0.0.4 Envoyer un email avec un code EXA lié au compte 
+    
+----- Version 0.1 -----
+    0.1.1 Spawn selon ton camp (OK)
+    
+----- Version 0.2 -----
+    0.2.1 Pouvoir se déplacer sur la carte (OK)
+    0.2.2 Déplacer la carte lors du mouvement (OK)
+    0.2.3 Pouvoir faire tourner le vaisseau (OK)
+    
+----- Version 0.3 -----
+    0.3.1 Pouvoir tirer (OK)
+    0.3.2 Limiter les tirs (ANNULÉ)
+    
+----- Version 0.4 -----
+    0.4.1 Insérer des astéroides (OK)
+    0.4.2 Faire bouger les astéroïdes (OK)
+    0.4.2 Mourrir à la collision de l'astéroide (OK)
+
+----- Version 0.5 -----
+    0.5.1 Pouvoir détruire les vaisseaux (OK)
+    0.5.2 Empecher le team kill (OK)
+    0.5.3 Incrémenter le score de ton équipe lorsque l'on abat un vaisseaux ennemis (OK)
+    0.5.4 Faire apparaitre qui tue qui (OK)
+    0.5.5 Stocker le nombre de tué (OK)
+    0.5.6 Lorsque l'on meurt on réaparait dans sa zone (OK)
+    
+----- Version 0.6 -----
+    0.6.1 Faire apparaitre le menu du site lorsque l'on place la souris en haut de l'ecran (OK)
+    0.6.2 Projection réacteur
+    0.6.3 Explosion de vaisseau (OK)
+ 
+----- Version 1.0 -----
+
+
+
+
+
